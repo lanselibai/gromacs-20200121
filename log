@@ -1,0 +1,360 @@
+                      :-) GROMACS - gmx grompp, 2019.3 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.3
+Executable:   /shared/ucl/apps/gromacs/2019.3/intel-2018/bin/gmx
+Data prefix:  /shared/ucl/apps/gromacs/2019.3/intel-2018
+Working dir:  /lustre/scratch/scratch/ucbechz/20191108_REMD_tutorial/tutorial-archive/stage2/sim0
+Command line:
+  gmx grompp -f sim -c confout -t equil-state
+
+Ignoring obsolete mdp entry 'optimize-fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Replacing old mdp entry 'verlet-buffer-drift' by 'verlet-buffer-tolerance'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+Generated 20503 of the 20503 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 17396 of the 20503 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 1 [file unknown]:
+  You are using constraints on all bonds, whereas the forcefield has been
+  parametrized only with constraints involving hydrogen atoms. We suggest
+  using constraints = h-bonds instead, this will also improve performance.
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 2742.00
+Reading Coordinates, Velocities and Box size from old trajectory
+Will read whole trajectory
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.3
+Source file: src/gromacs/fileio/checkpoint.cpp (line 591)
+Function:    lambda []()->auto::operator()()->auto
+
+Assertion failed:
+Condition: list != nullptr || (v != nullptr && vector == nullptr) || (v == nullptr && vector != nullptr)
+Without list, we should have exactly one of v and vector != NULL
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+turning all bonds into constraints...
+turning all bonds into constraints...
+Analysing residue names:
+There are:     3    Protein residues
+There are:   450      Water residues
+Analysing Protein...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 298 K
+Calculated rlist for 1x1 atom pair-list as 1.035 nm, buffer size 0.035 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+                      :-) GROMACS - gmx grompp, 2019.3 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.3
+Executable:   /shared/ucl/apps/gromacs/2019.3/intel-2018/bin/gmx
+Data prefix:  /shared/ucl/apps/gromacs/2019.3/intel-2018
+Working dir:  /lustre/scratch/scratch/ucbechz/20191108_REMD_tutorial/tutorial-archive/stage2/sim1
+Command line:
+  gmx grompp -f sim -c confout -t equil-state
+
+Ignoring obsolete mdp entry 'optimize-fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Replacing old mdp entry 'verlet-buffer-drift' by 'verlet-buffer-tolerance'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+Generated 20503 of the 20503 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 17396 of the 20503 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 1 [file unknown]:
+  You are using constraints on all bonds, whereas the forcefield has been
+  parametrized only with constraints involving hydrogen atoms. We suggest
+  using constraints = h-bonds instead, this will also improve performance.
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 2742.00
+Reading Coordinates, Velocities and Box size from old trajectory
+Will read whole trajectory
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.3
+Source file: src/gromacs/fileio/checkpoint.cpp (line 591)
+Function:    lambda []()->auto::operator()()->auto
+
+Assertion failed:
+Condition: list != nullptr || (v != nullptr && vector == nullptr) || (v == nullptr && vector != nullptr)
+Without list, we should have exactly one of v and vector != NULL
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+turning all bonds into constraints...
+turning all bonds into constraints...
+Analysing residue names:
+There are:     3    Protein residues
+There are:   450      Water residues
+Analysing Protein...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 308 K
+Calculated rlist for 1x1 atom pair-list as 1.036 nm, buffer size 0.036 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+                      :-) GROMACS - gmx grompp, 2019.3 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.3
+Executable:   /shared/ucl/apps/gromacs/2019.3/intel-2018/bin/gmx
+Data prefix:  /shared/ucl/apps/gromacs/2019.3/intel-2018
+Working dir:  /lustre/scratch/scratch/ucbechz/20191108_REMD_tutorial/tutorial-archive/stage2/sim2
+Command line:
+  gmx grompp -f sim -c confout -t equil-state
+
+Ignoring obsolete mdp entry 'optimize-fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Replacing old mdp entry 'verlet-buffer-drift' by 'verlet-buffer-tolerance'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+Generated 20503 of the 20503 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 17396 of the 20503 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 1 [file unknown]:
+  You are using constraints on all bonds, whereas the forcefield has been
+  parametrized only with constraints involving hydrogen atoms. We suggest
+  using constraints = h-bonds instead, this will also improve performance.
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 2742.00
+Reading Coordinates, Velocities and Box size from old trajectory
+Will read whole trajectory
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.3
+Source file: src/gromacs/fileio/checkpoint.cpp (line 591)
+Function:    lambda []()->auto::operator()()->auto
+
+Assertion failed:
+Condition: list != nullptr || (v != nullptr && vector == nullptr) || (v == nullptr && vector != nullptr)
+Without list, we should have exactly one of v and vector != NULL
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+turning all bonds into constraints...
+turning all bonds into constraints...
+Analysing residue names:
+There are:     3    Protein residues
+There are:   450      Water residues
+Analysing Protein...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 318.34 K
+Calculated rlist for 1x1 atom pair-list as 1.037 nm, buffer size 0.037 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+                      :-) GROMACS - gmx grompp, 2019.3 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.3
+Executable:   /shared/ucl/apps/gromacs/2019.3/intel-2018/bin/gmx
+Data prefix:  /shared/ucl/apps/gromacs/2019.3/intel-2018
+Working dir:  /lustre/scratch/scratch/ucbechz/20191108_REMD_tutorial/tutorial-archive/stage2/sim3
+Command line:
+  gmx grompp -f sim -c confout -t equil-state
+
+Ignoring obsolete mdp entry 'optimize-fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Replacing old mdp entry 'verlet-buffer-drift' by 'verlet-buffer-tolerance'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+Generated 20503 of the 20503 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 17396 of the 20503 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 1 [file unknown]:
+  You are using constraints on all bonds, whereas the forcefield has been
+  parametrized only with constraints involving hydrogen atoms. We suggest
+  using constraints = h-bonds instead, this will also improve performance.
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 2742.00
+Reading Coordinates, Velocities and Box size from old trajectory
+Will read whole trajectory
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.3
+Source file: src/gromacs/fileio/checkpoint.cpp (line 591)
+Function:    lambda []()->auto::operator()()->auto
+
+Assertion failed:
+Condition: list != nullptr || (v != nullptr && vector == nullptr) || (v == nullptr && vector != nullptr)
+Without list, we should have exactly one of v and vector != NULL
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+turning all bonds into constraints...
+turning all bonds into constraints...
+Analysing residue names:
+There are:     3    Protein residues
+There are:   450      Water residues
+Analysing Protein...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 329.02 K
+Calculated rlist for 1x1 atom pair-list as 1.038 nm, buffer size 0.038 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
